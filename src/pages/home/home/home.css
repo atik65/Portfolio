@@ -1,0 +1,150 @@
+.home-left {
+  position: relative;
+  overflow: hidden;
+}
+
+.home-left-bg {
+  height: 100vh;
+}
+
+.home-left-bg img {
+  height: 100vh;
+}
+
+.profile-image {
+  position: absolute;
+  top: 5%;
+  left: 6%;
+}
+
+.profile-image img {
+  height: 90vh;
+  border-radius: 30px;
+  box-shadow: 1px 1px 5px rgb(117, 117, 117);
+}
+
+.home-right {
+  display: flex;
+  padding-left: 80px !important;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.name {
+  color: #72b626;
+  font-weight: 700;
+}
+.title {
+  font-weight: 700;
+  color: #666666;
+}
+
+.intro-text {
+  padding: 20px 140px 20px 0;
+  text-align: justify;
+  font-size: 17px;
+}
+
+.resume-button {
+  width: 250px;
+  height: 52px;
+  background-color: inherit;
+  border: 1px solid #72b626;
+  font-size: 15px;
+  font-weight: 600;
+  color: #666666;
+  border-radius: 50px;
+  position: relative;
+  text-align: left;
+  padding-left: 22px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.resume-after {
+  height: 52px;
+  width: 55px;
+  background-color: #72b626;
+  border-radius: 50px;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+  transition: all 0.2s;
+}
+
+.resume-after span {
+  height: 52px;
+  opacity: 0;
+  font-size: 0;
+  /* display: none; */
+  transition: 0.2s;
+}
+
+.resume-button:hover .resume-after {
+  width: 251px;
+}
+.resume-button:hover .resume-after span {
+  display: inline-block;
+  width: 250px;
+  padding: 15px 22px;
+  font-size: 15px;
+  opacity: 1;
+  font-weight: 600;
+}
+
+.resume-button:hover {
+  color: #666666;
+}
+
+@media only screen and (max-width: 768px) {
+  .home-left-bg img {
+    display: none;
+  }
+
+  .home-left {
+    display: flex;
+    justify-content: center;
+
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 260px;
+  }
+
+  .profile-image {
+    position: relative;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+  }
+
+  .profile-image img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px rgb(117, 117, 117);
+  }
+
+  .home-right {
+    margin-top: 50px;
+    display: flex;
+    padding-left: 20px !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+
+  .intro-text {
+    padding: 20px 20px 20px 0;
+    text-align: justify;
+    font-size: 17px;
+  }
+}
