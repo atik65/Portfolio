@@ -8,17 +8,17 @@ import atik from "../../../images/atik_profile.png";
 const Home = () => {
   const [profileImg, setProfileImg] = useState({});
 
-  // useEffect(() => {
-  //   axios
-  //     .get("https://protfolio-site.herokuapp.com/profile-img")
-  //     .then((res) => {
-  //       setProfileImg(res.data);
-  //       console.log(res.data);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error.message);
-  //     });
-  // }, []);
+  useEffect(() => {
+    axios
+      .get("https://protfolio-site.herokuapp.com/profile-img")
+      .then((res) => {
+        setProfileImg(res.data);
+        console.log(res.data);
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  }, []);
 
   return (
     <>

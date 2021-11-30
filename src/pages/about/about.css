@@ -1,0 +1,125 @@
+.about-head h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: #616262;
+}
+
+.about-head span {
+  color: #72b626;
+}
+
+.personal-info h3 {
+  color: #616262;
+  font-weight: 600;
+}
+
+.personal-info h6 {
+  line-height: 40px;
+  color: #7c7c7cc9;
+  font-weight: 500;
+}
+.personal-info h6 span {
+  color: #616262;
+}
+
+.experience-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.experience-card-inner {
+  border: 1px solid #7c7c7c41;
+  border-radius: 5px;
+  padding: 20px;
+  min-height: 155px;
+}
+
+.experience-card-inner h1 {
+  padding-left: 35px;
+  color: #72b626;
+  font-weight: 600;
+}
+.experience-card-inner h6 {
+  padding-left: 35px;
+  line-height: 25px;
+  color: #616262;
+}
+
+.skills h1,
+.education h1 {
+  text-align: center;
+  color: #616262;
+}
+
+.skills-inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  place-items: center;
+}
+.skills-item {
+  height: 130px;
+  width: 130px;
+  border: 10px solid #72b626;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #616262;
+}
+
+.education {
+  padding-bottom: 120px;
+  padding-top: 40px;
+}
+
+.education span {
+  color: #fff;
+  background-color: #72b626;
+  padding: 8px;
+
+  border-radius: 50%;
+}
+
+.education p {
+  margin-left: 15px;
+  background-color: #61626221;
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 20px;
+}
+
+.education h5 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.education h6 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-head h1 {
+    font-size: 45px;
+  }
+
+  .personal-info {
+    text-align: center;
+  }
+
+  .experience-card {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+
+  .skills-inner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+}
