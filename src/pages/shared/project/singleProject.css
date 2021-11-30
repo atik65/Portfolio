@@ -1,0 +1,49 @@
+.singleProject img {
+  width: 100%;
+}
+
+.singleProject {
+  height: 200px;
+  overflow: hidden;
+  box-shadow: #73b6264f 1px 1px 5px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.single-project-after button {
+  border: none;
+  background-color: inherit;
+  border: 1px solid #616162;
+  padding: 3px 10px;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.single-project-after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  background-color: #72b626;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.4s;
+  opacity: 0;
+  text-decoration: none;
+}
+
+.single-project-after:hover {
+  color: #fff;
+}
+
+.singleProject:hover .single-project-after {
+  height: 200px;
+  opacity: 1;
+}

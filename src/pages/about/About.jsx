@@ -128,7 +128,7 @@ const About = () => {
                 <div className="col-11">
                   <p> 2020 - PRESENT </p>
                   <h5> MERN STACK DEVELOPER </h5>
-                  <h6> Working REACT.js and Node.js about 1 year long </h6>
+                  <h6> Working with REACT.js and Node.js about 1 year long </h6>
                 </div>
               </div>
             </div>
