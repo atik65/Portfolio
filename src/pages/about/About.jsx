@@ -107,7 +107,7 @@ const About = () => {
               <div className="row mx-0 px-0">
                 <div className="col-1">
                   <span>
-                    <i class="fas fa-briefcase"></i>
+                    <i className="fas fa-briefcase"></i>
                   </span>
                 </div>
                 <div className="col-11">
@@ -122,7 +122,7 @@ const About = () => {
               <div className="row mx-0 px-0 mt-4">
                 <div className="col-1">
                   <span>
-                    <i class="fas fa-briefcase"></i>
+                    <i className="fas fa-briefcase"></i>
                   </span>
                 </div>
                 <div className="col-11">

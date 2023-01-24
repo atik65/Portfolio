@@ -11,7 +11,7 @@ const Project = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("https://protfolio-site.herokuapp.com/projects")
+      .get("https://portfolio-strapi-mongo-server.onrender.com/projects")
       .then((res) => {
         setProjects(res.data);
         setLoading(false);
@@ -27,8 +27,8 @@ const Project = () => {
       <Nav />
       {loading ? (
         <h1 className="m-5 text-center">
-          <div class="spinner-grow text-success" role="status">
-            <span class="visually-hidden">Loading...</span>
+          <div className="spinner-grow text-success" role="status">
+            <span className="visually-hidden">Loading...</span>
           </div>
         </h1>
       ) : (
@@ -38,8 +38,8 @@ const Project = () => {
           </h1>
 
           <div className="projects-container container">
-            {projects.map((project) => (
-              <SignleProject project={project} />
+            {projects.map((project, i) => (
+              <SignleProject key={i} project={project} />
             ))}
           </div>
         </div>

@@ -10,12 +10,11 @@ const Contact = () => {
     reset,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) =>{
+  const onSubmit = (data) => {
+    console.log(data);
 
-console.log(data);
-
-reset()
-  } 
+    reset();
+  };
 
   return (
     <div>
@@ -39,7 +38,7 @@ reset()
               <div className="row mx-0 px-0 my-4">
                 <div className="col-2">
                   <span>
-                    <i class="fas fa-map"></i>
+                    <i className="fas fa-map"></i>
                   </span>
                 </div>
                 <div className="col-10">
@@ -51,7 +50,7 @@ reset()
               <div className="row mx-0 px-0 my-4">
                 <div className="col-2">
                   <span>
-                    <i class="fas fa-envelope-open"></i>
+                    <i className="fas fa-envelope-open"></i>
                   </span>
                 </div>
                 <div className="col-10">
@@ -87,7 +86,7 @@ reset()
                   {...register("message", { required: true })}
                 />
 
-              <button> SEND MESSAGE </button>
+                <button> SEND MESSAGE </button>
               </form>
             </div>
           </div>

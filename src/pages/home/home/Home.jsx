@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("https://protfolio-site.herokuapp.com/profile-img")
+      .get("https://portfolio-strapi-mongo-server.onrender.com/profile-img")
       .then((res) => {
         setProfileImg(res.data);
         console.log(res.data);
@@ -52,7 +52,7 @@ const Home = () => {
               <span> DOWNLOAD RESUME</span>
               <div className="resume-after">
                 <span> DOWNLOAD RESUME </span>
-                <i class="fas fa-arrow-right    "></i>
+                <i className="fas fa-arrow-right    "></i>
               </div>
             </a>
           </div>

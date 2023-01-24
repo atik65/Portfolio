@@ -13,7 +13,7 @@ const PorjectsDetails = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`https://protfolio-site.herokuapp.com/projects/${id}`)
+      .get(`https://portfolio-strapi-mongo-server.onrender.com/projects/${id}`)
       .then((res) => {
         setProject(res.data);
         setLoading(false);
@@ -48,8 +48,8 @@ const PorjectsDetails = () => {
 
       {loading ? (
         <h1 className="m-5 text-center">
-          <div class="spinner-grow text-success" role="status">
-            <span class="visually-hidden">Loading...</span>
+          <div className="spinner-grow text-success" role="status">
+            <span className="visually-hidden">Loading...</span>
           </div>
         </h1>
       ) : (

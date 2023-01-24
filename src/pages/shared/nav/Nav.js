@@ -6,23 +6,23 @@ const Nav = () => {
   return (
     <div className="nav">
       <NavLink to="/">
-        <i class="fas fa-home"></i>
+        <i className="fas fa-home"></i>
       </NavLink>
       <NavLink to="/about" className="nav-item">
-        <i class="fas fa-user"></i>
+        <i className="fas fa-user"></i>
       </NavLink>
       <NavLink to="/project" className="nav-item">
-        <i class="fas fa-project-diagram"></i>
+        <i className="fas fa-project-diagram"></i>
       </NavLink>
       <NavLink to="/contact" className="nav-item">
-        <i class="fas fa-envelope-open"></i>
+        <i className="fas fa-envelope-open"></i>
       </NavLink>
       <a
-        href="https://protfolio-site.herokuapp.com/admin"
+        href="https://portfolio-strapi-mongo-server.onrender.com/admin"
         target="_blank"
         className="nav-item"
       >
-        <i class="fas fa-cloud-upload-alt"></i>
+        <i className="fas fa-cloud-upload-alt"></i>
       </a>
     </div>
   );
