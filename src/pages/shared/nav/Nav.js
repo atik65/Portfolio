@@ -17,11 +17,7 @@ const Nav = () => {
       <NavLink to="/contact" className="nav-item">
         <i className="fas fa-envelope-open"></i>
       </NavLink>
-      <a
-        href="https://portfolio-strapi-mongo-server.onrender.com/admin"
-        target="_blank"
-        className="nav-item"
-      >
+      <a href="http://20.204.114.97/admin" target="_blank" className="nav-item">
         <i className="fas fa-cloud-upload-alt"></i>
       </a>
     </div>

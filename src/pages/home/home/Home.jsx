@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("https://portfolio-strapi-mongo-server.onrender.com/profile-img")
+      .get("http://20.204.114.97/profile-img")
       .then((res) => {
         setProfileImg(res.data);
         console.log(res.data);
@@ -36,12 +36,25 @@ const Home = () => {
             <h1 className="name"> --- I'M ATIK HASAN.</h1>
             <h1 className="title"> FRONTEND WEB DEV </h1>
             <p className="intro-text">
+              I am a highly skilled frontend web developer with expertise in
+              JavaScript, React.js, Next.js, Redux, Zustand, Jotai, Tailwind
+              CSS, Material-UI, and more. I am also proficient in backend
+              technologies such as Node.js, Express.js, Firebase, MongoDB, and
+              MySQL. With a strong foundation in HTML, CSS, and Bootstrap, I
+              excel at building single-page applications and delivering seamless
+              user experiences. Additionally, my knowledge extends to languages
+              like C++ and Java, along with a solid understanding of
+              object-oriented programming and data structures. Comfortable
+              working with Ubuntu and Nginx, I am well-versed in version control
+              using Git.
+            </p>
+            {/* <p className="intro-text">
               I am a frontend web developer . Expert in JavaScript, React ,
               Firebase Authentication, React Hooks, Context API, HTML 5, CSS 3,
               Bootstrap 4, Git and GitHub and familiar with Node.js, Express.js,
               MongoDB, Tailwind CSS and Meaterial-UI and very much comfortable
               with building single page applications using React.js .
-            </p>
+            </p> */}
 
             <a
               href="https://drive.google.com/file/d/1GeOtkQ3clz6SUd6lsFX-eLJ4nzerkT4G/view?usp=sharing"

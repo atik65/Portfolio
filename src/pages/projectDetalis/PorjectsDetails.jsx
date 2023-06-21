@@ -3,7 +3,8 @@ import Nav from "../shared/nav/Nav";
 import "./projectDetails.css";
 import { useParams } from "react-router";
 import axios from "axios";
-
+import { BsCodeSlash } from "react-icons/bs";
+import { CgWebsite } from "react-icons/cg";
 const PorjectsDetails = () => {
   const { id } = useParams();
   const [project, setProject] = useState({});
@@ -13,7 +14,7 @@ const PorjectsDetails = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`https://portfolio-strapi-mongo-server.onrender.com/projects/${id}`)
+      .get(`http://20.204.114.97/projects/${id}`)
       .then((res) => {
         setProject(res.data);
         setLoading(false);
@@ -60,14 +61,16 @@ const PorjectsDetails = () => {
 
               <div className="row mx-0 px-0 mt-2">
                 {images.map((image) => {
-                  return (
-                    <div
-                      className="col-3 small-img"
-                      onClick={() => setImage(image?.url)}
-                    >
-                      <img src={image?.url} alt="" />{" "}
-                    </div>
-                  );
+                  if (image?.url)
+                    return (
+                      <div
+                        className="col-3 small-img"
+                        onMouseMove={() => setImage(image?.url)}
+                        onClick={() => setImage(image?.url)}
+                      >
+                        <img src={image?.url} alt="" />
+                      </div>
+                    );
                 })}
               </div>
             </div>
@@ -78,16 +81,27 @@ const PorjectsDetails = () => {
               <p>{projectDes}</p>
 
               <a target="_blank" href={liveLink}>
+                <span>
+                  <CgWebsite />
+                </span>
                 Live View
               </a>
 
               <a target="_blank" href={clientCode}>
+                <span>
+                  <BsCodeSlash />
+                </span>
                 Client Side Code
               </a>
 
-              <a target="_blank" href={serverCode}>
-                Server side code
-              </a>
+              {serverCode && (
+                <a target="_blank" href={serverCode}>
+                  <span>
+                    <BsCodeSlash />
+                  </span>
+                  Server side code
+                </a>
+              )}
             </div>
           </div>
         </div>
