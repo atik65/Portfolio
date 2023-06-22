@@ -43,7 +43,7 @@ const Contact = () => {
                 </div>
                 <div className="col-10">
                   <p> ADDRESS POINT </p>
-                  <h6> Pabna, Bangladesh </h6>
+                  <h6> Dhaka, Bangladesh </h6>
                 </div>
               </div>
 
@@ -55,7 +55,7 @@ const Contact = () => {
                 </div>
                 <div className="col-10">
                   <p> MAIL ME </p>
-                  <h6> atikhasan801@gmail.com </h6>
+                  <h6> atik.hasan.dev@gmail.com </h6>
                 </div>
               </div>
             </div>

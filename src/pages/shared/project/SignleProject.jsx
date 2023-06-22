@@ -1,6 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./singleProject.css";
+
+import { AiOutlineZoomIn } from "react-icons/ai";
+
 const SignleProject = ({ project }) => {
   const {
     liveLink,
@@ -21,7 +24,10 @@ const SignleProject = ({ project }) => {
         <NavLink to={`/projects/${_id}`} className="single-project-after">
           <h5>{projectName}</h5>
           <h5>{projectType} site</h5>
-          <button> Explore </button>
+          <button>
+            {" "}
+            <AiOutlineZoomIn /> Explore{" "}
+          </button>
         </NavLink>
       </div>
     </div>

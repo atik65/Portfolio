@@ -13,10 +13,13 @@
 .single-project-after button {
   border: none;
   background-color: inherit;
-  border: 1px solid #616162;
+  /* border: 1px solid #616162; */
+  border: 1px solid #ffffff;
   padding: 3px 10px;
-  border-radius: 3px;
+  border-radius: 10px;
   color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .single-project-after {
@@ -26,7 +29,8 @@
   right: 0;
   bottom: 0;
   height: 0;
-  background-color: #72b626;
+
+  background-image: linear-gradient(315deg, #10b981 0%, #047857 74%);
   width: 100%;
   display: flex;
   justify-content: center;

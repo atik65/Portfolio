@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "../shared/nav/Nav";
 import "./about.css";
-
+import { skillSet } from "../../utils/skillsSet";
 const About = () => {
   return (
     <div>
@@ -47,7 +47,7 @@ const About = () => {
                   Address: <span> Dhaka, Bangladesh </span>
                 </h6>
                 <h6>
-                  Email: <span> atikhasan801@gmail.com </span>
+                  Email: <span> atik.hasan.dev@gmail.com </span>
                 </h6>
                 <h6>
                   Language: <span> Bangla, English, Hindi </span>
@@ -84,8 +84,18 @@ const About = () => {
           <h1 className="my-5"> MY SKILLS </h1>
 
           <div className="skills-inner">
-            <div className="skills-item">JAVASCRIPT</div>
-            <div className="skills-item">REACT.JS</div>
+            {skillSet.map((skill) => {
+              return (
+                <div key={skill.title} className="skills-item">
+                  <div className="skill-icon">
+                    <img src={skill.image} alt="" />
+                  </div>
+                  <p>{skill.title}</p>
+                </div>
+              );
+            })}
+
+            {/* <div className="skills-item">REACT.JS</div>
             <div className="skills-item">NEXT.JS</div>
             <div className="skills-item">REDUX</div>
             <div className="skills-item">ZUSTAND</div>
@@ -106,7 +116,7 @@ const About = () => {
             <div className="skills-item">DS</div>
             <div className="skills-item">UBUNTU</div>
             <div className="skills-item">NGINX</div>
-            <div className="skills-item">GIT</div>
+            <div className="skills-item">GIT</div> */}
           </div>
         </div>
 
