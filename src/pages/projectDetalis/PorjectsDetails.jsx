@@ -14,7 +14,7 @@ const PorjectsDetails = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://20.204.114.97/projects/${id}`)
+      .get(`https://portfolio-strapi-mongo-server.onrender.com/projects/${id}`)
       .then((res) => {
         setProject(res.data);
         setLoading(false);

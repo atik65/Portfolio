@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("http://20.204.114.97/profile-img")
+      .get("https://portfolio-strapi-mongo-server.onrender.com/profile-img")
       .then((res) => {
         setProfileImg(res.data);
         console.log(res.data);
