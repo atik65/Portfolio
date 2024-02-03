@@ -8,3 +8,8 @@
 body {
   font-family: "Quicksand", sans-serif !important ;
 }
+
+/* hide scrollbar */
+body::-webkit-scrollbar {
+  display: none;
+}
