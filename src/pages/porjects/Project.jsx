@@ -15,7 +15,11 @@ const Project = () => {
       // .get("https://portfolio-strapi-mongo-server.onrender.com/projects")
       .get("https://portfolio-strapi-mongo-server.onrender.com/projects")
       .then((res) => {
-        setProjects(res.data);
+        const sortedProjects = res?.data?.sort((a, b) => {
+          return new Date(b.createdAt) - new Date(a.createdAt);
+        });
+
+        setProjects(sortedProjects);
         setLoading(false);
       })
       .catch((error) => {
@@ -23,6 +27,8 @@ const Project = () => {
         setLoading(false);
       });
   }, []);
+
+  // console.log(projects);
 
   if (!loading && projects.length === 0) {
     return (

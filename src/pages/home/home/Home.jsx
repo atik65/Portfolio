@@ -24,7 +24,7 @@ const Home = () => {
     <>
       <div className="home">
         <div className="row mx-0 px-0">
-          <div className="col-md-5 home-left px-0">
+          <div className="col-lg-5 home-left px-0">
             <div className="home-left-bg">
               <img src={bg} alt="" />
             </div>
@@ -32,7 +32,7 @@ const Home = () => {
               <img src={atik} alt="" />
             </div>
           </div>
-          <div className="col-md-7 home-right">
+          <div className="col-lg-7 home-right">
             <h1 className="name"> --- I'M ATIK HASAN.</h1>
             <h1 className="title"> FRONTEND WEB DEV </h1>
             <p className="intro-text">

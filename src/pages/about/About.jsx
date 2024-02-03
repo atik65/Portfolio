@@ -15,15 +15,15 @@ const About = () => {
 
       <div className="container ">
         <div className="row mx-0 px-0">
-          <div className="col-md-6 personal-info">
+          <div className="col-lg-6 personal-info">
             <div className="row mx-0 px-0">
               <h3 className="my-3">PERSONAL INFOS</h3>
               <div className="col-md-5">
                 <h6>
-                  First Name: <span> Atik </span>
+                  First Name: <span> Md. Atikul Islam </span>
                 </h6>
                 <h6>
-                  Last Name: <span> Hasan </span>
+                  Last Name: <span> Atik </span>
                 </h6>
 
                 <h6>
@@ -38,7 +38,7 @@ const About = () => {
               </div>
               <div className="col-md-7">
                 <h6>
-                  Age: <span> 22 Years </span>
+                  Age: <span>{new Date().getFullYear() - 2001} Years </span>
                 </h6>
                 <h6>
                   Nationality: <span> Bangladeshi </span>
@@ -47,7 +47,14 @@ const About = () => {
                   Address: <span> Dhaka, Bangladesh </span>
                 </h6>
                 <h6>
-                  Email: <span> atik.hasan.dev@gmail.com </span>
+                  Email:{" "}
+                  <span>
+                    {" "}
+                    <a href="mailto:atik.hasan.dev@gmail.com">
+                      {" "}
+                      atik.hasan.dev@gmail.com{" "}
+                    </a>{" "}
+                  </span>
                 </h6>
                 <h6>
                   Language: <span> Bangla, English, Hindi </span>
@@ -55,7 +62,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-6 experience-card">
+          <div className="col-lg-6 experience-card">
             <div className="experience-card-inner">
               <h1> 2 </h1>
               <h6> __ YEARS OF EXPERIENCE </h6>
@@ -126,7 +133,7 @@ const About = () => {
           <h1 className="my-5"> EXPERIENCE & EDUCATION</h1>
 
           <div className="row mx-0 px-0 mt-4">
-            <div className="col-md-6">
+            <div className="col-xl-6">
               <div className="row mx-0 px-0 ">
                 <div className="col-1">
                   <span>
@@ -134,7 +141,45 @@ const About = () => {
                   </span>
                 </div>
                 <div className="col-11">
-                  <p className=""> 2022 - present </p>
+                  <p className=""> 2023 - Present </p>
+                  <h5>
+                    {" "}
+                    FRONTEND WEB DEVELOPER in{" "}
+                    <a
+                      target="_blank"
+                      href="https://www.facebook.com/eutropia.it"
+                    >
+                      Eutropia-IT Solution
+                    </a>
+                  </h5>
+                  <h6> Eutropia-IT Solution </h6>
+                  <h4>
+                    As the lead frontend developer at Eutropia-IT Solution since
+                    2023, I have spearheaded the development of diverse
+                    projects, showcasing my proficiency in Next.js. Over the
+                    years, I have played a key role in crafting a robust
+                    ecommerce site with a sophisticated admin panel, ensuring a
+                    seamless and user-friendly experience for both customers and
+                    administrators. Additionally, my expertise has been
+                    instrumental in delivering high-quality websites for a real
+                    estate agency, a church, and a project management web app.
+                    The collaborative environment at Eutropia-IT Solution has
+                    not only sharpened my technical skills but also refined my
+                    problem-solving abilities and communication skills. I take
+                    pride in contributing to the success of Eutropia-IT Solution
+                    by creating innovative and effective web solutions
+                  </h4>
+                </div>
+              </div>
+
+              <div className="row mx-0 px-0 mt-5 ">
+                <div className="col-1">
+                  <span>
+                    <i className="fas fa-briefcase"></i>
+                  </span>
+                </div>
+                <div className="col-11">
+                  <p className=""> 2022 - 2023 </p>
                   <h5> FRONTEND WEB DEVELOPER in RF Soft Lab </h5>
                   <h6>RF Soft Lab </h6>
                   <h4>
@@ -155,7 +200,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="row mx-0 px-0 mt-4">
+              {/* <div className="row mx-0 px-0 mt-4">
                 <div className="col-1">
                   <span>
                     <i className="fas fa-briefcase"></i>
@@ -181,9 +226,9 @@ const About = () => {
                     delivering high-quality frontend solutions.
                   </h4>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="row mx-0 px-0 mt-4">
+              {/* <div className="row mx-0 px-0 mt-4">
                 <div className="col-1">
                   <span>
                     <i className="fas fa-briefcase"></i>
@@ -199,7 +244,7 @@ const About = () => {
                     C++, Java, OOP, DS, Algorithms, Problem Solving, etc.
                   </h6>
                 </div>
-              </div>
+              </div> */}
 
               {/* <div className="row mx-0 px-0 mt-4">
                 <div className="col-1">
@@ -214,7 +259,7 @@ const About = () => {
                 </div>
               </div> */}
             </div>
-            <div className="col-md-6">
+            <div className="col-xl-6">
               <div className="row mx-0 px-0 mt-4">
                 <div className="col-1">
                   <span>

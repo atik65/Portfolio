@@ -217,7 +217,7 @@
   color: #fff;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 992px) {
   .nav {
     position: fixed;
     top: 90%;
@@ -230,6 +230,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   }
 
   .homeNav::after,

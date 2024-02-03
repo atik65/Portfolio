@@ -5,6 +5,9 @@ import { useParams } from "react-router";
 import axios from "axios";
 import { BsCodeSlash } from "react-icons/bs";
 import { CgWebsite } from "react-icons/cg";
+
+import ImageGallery from "react-image-gallery";
+
 const PorjectsDetails = () => {
   const { id } = useParams();
   const [project, setProject] = useState({});
@@ -37,6 +40,8 @@ const PorjectsDetails = () => {
     _id,
   } = project;
 
+  // console.log(project);
+
   return (
     <div>
       <Nav />
@@ -55,11 +60,11 @@ const PorjectsDetails = () => {
         </h1>
       ) : (
         <div className="container projectDetails">
-          <div className="row mx-0 px-0">
-            <div className="col-md-6">
-              <img className="big-image" src={image} alt="" />
+          <div className=" mx-0 px-0">
+            <div className="">
+              {/* <img className="big-image" src={image} alt="" /> */}
 
-              <div className="row mx-0 px-0 mt-2">
+              {/* <div className="row mx-0 px-0 mt-2">
                 {images.map((image) => {
                   if (image?.url)
                     return (
@@ -72,10 +77,28 @@ const PorjectsDetails = () => {
                       </div>
                     );
                 })}
-              </div>
+              </div> */}
+
+              <ImageGallery
+                lazyLoad={true}
+                infinite={true}
+                autoPlay={true}
+                slideDuration={400}
+                slideInterval={3000}
+                slideOnThumbnailOver={true}
+                // showBullets={true}
+                // showNav={false}
+                // disableSwipe={false}
+                items={images.map((image) => {
+                  return {
+                    original: image.url,
+                    thumbnail: image.url,
+                  };
+                })}
+              />
             </div>
-            <div className="col-md-6 mt-4 mt-md-0">
-              <h2> {projectName} </h2>
+            <div className=" ">
+              <h1 className="mt-5 "> {projectName} </h1>
               <h4 className="my-3"> Category: {projectType} </h4>
               <h5> About this site-- </h5>
               <p>{projectDes}</p>
@@ -87,12 +110,14 @@ const PorjectsDetails = () => {
                 Live View
               </a>
 
-              <a target="_blank" href={clientCode}>
-                <span>
-                  <BsCodeSlash />
-                </span>
-                Client Side Code
-              </a>
+              {clientCode && (
+                <a target="_blank" href={clientCode}>
+                  <span>
+                    <BsCodeSlash />
+                  </span>
+                  Client Side Code
+                </a>
+              )}
 
               {serverCode && (
                 <a target="_blank" href={serverCode}>
@@ -103,6 +128,8 @@ const PorjectsDetails = () => {
                 </a>
               )}
             </div>
+
+            <div className="mb-5"></div>
           </div>
         </div>
       )}

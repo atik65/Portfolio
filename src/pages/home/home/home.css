@@ -15,15 +15,35 @@
   position: absolute;
   /* top: 5%; */
   /* left: 6%; */
-  top: 15%;
+  /* top: 15%; */
+  top: 0;
   left: 15%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  backdrop-filter: blur(40px);
 }
 
 .profile-image img {
   /* height: 90vh; */
-  height: 70vh;
-  border-radius: 30px;
+  /* max-height: 60vh; */
+  height: 500px;
+  width: 500px;
+  border-radius: 100%;
   box-shadow: 1px 1px 5px rgb(117, 117, 117);
+
+  /* width: 100%; */
+  object-fit: cover;
+  object-position: top;
+  transition: all 0.3s;
+}
+
+.profile-image img:hover {
+  /* transform: scale(1.1); */
+  transition: all 0.3s;
+  box-shadow: 1px 1px 50px rgb(117, 117, 117);
+  /* box-shadow: 1px 1px 50px #426717; */
 }
 
 .home-right {
@@ -105,7 +125,23 @@
   color: #666666;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
+  .profile-image img {
+    /* height: 90vh; */
+    /* max-height: 60vh; */
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    box-shadow: 1px 1px 5px rgb(117, 117, 117);
+
+    /* width: 100%; */
+    object-fit: cover;
+    object-position: top;
+    transition: all 0.3s;
+  }
+}
+
+@media only screen and (max-width: 992px) {
   .home-left-bg img {
     display: none;
   }
@@ -125,6 +161,12 @@
     height: 220px;
     width: 220px;
     border-radius: 50%;
+    /* background-color: red; */
+    width: 100%;
+    left: 0;
+    display: flex;
+    top: 20px;
+    justify-content: center;
   }
 
   .profile-image img {
